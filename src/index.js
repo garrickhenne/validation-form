@@ -123,6 +123,9 @@ function checkSubmit() {
     } else {
       errorMsg.style.color = "green";
       errorMsg.textContent = "Successfully submitted! 👍";
+      form.onsubmit = function () {
+        return false;
+      };
     }
   }
 }
